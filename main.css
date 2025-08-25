@@ -311,23 +311,60 @@ body {
 .tl-points li + li { margin-top: .35rem; }
 
 
-#Skills {
-    background-color: hsl(211, 77%, 93%); /* Background color for the Skills section */
-    padding: 20px; /* Add some padding to the Skills section */
-    border: 5px solid white; /* Adds a white border */
-    margin-bottom: 15px;
+/* ---------- Skills Layout ---------- */
+.skills {
+  margin: 2rem auto;
+  padding: 1.25rem 1rem;
+  max-width: 1100px;
+  backdrop-filter: blur(3px);
 }
 
-#Skills h2 {
-    color: #333; /* Color for the heading "Skills" */
-    margin-bottom: 10px; /* Add some space below the heading */
-    padding: 20px;
-    
+.skills h2 {
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  margin-bottom: 0.75rem;
 }
 
-#Skills p {
-    margin-left: 40px; /* Add some space between each skill */
+.skills-group + .skills-group {
+  margin-top: 1.25rem;
 }
+
+/* Responsive grid of “pills” */
+.skills-grid {
+  --gap: 0.75rem;
+  --item-pad: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--gap);
+  list-style: none;
+
+}
+
+/* Individual skill */
+.skill {
+  display: flex;
+  flex-direction: column;   /* stack logo + text vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically */
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  text-align: center;
+  height: 80px;   /* fixed height so image+text can center properly */
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* ensures no distortion */
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
 
 #Projects {
     background-color: hsl(207, 31%, 94%); /* Background color for the Skills section */
