@@ -11,46 +11,52 @@
 <style>
   body {
     background-image: url("../static/backround1.jpeg");
-    background-repeat: repeat-x;
     background-position: top center;
     background-size: contain;
-    background-attachment: scroll;
-    background-size: auto;
+
 }
 </style>
 <body>
 	<div id="header-container"></div>
-	
+        <main>
+            
             <h2>Projects:</h2>
-            <div class="project-item">
-                <h3>Munch Match</h3>
-                    • Built a full-stack group decision-making web app using React, Next.js, tRPC, Node.js, and SQLite to help users vote on nearby restaurants or activities.
-                <br>• Integrated Google Maps API to fetch personalized location-based options and implemented real-time group voting logic with session codes.
-                <br>• Designed a clean, responsive UI using Tailwind CSS and managed data with Prisma for lightweight, efficient storage.
-            <div class="image2">
-                <img src="../static/MMLanding_page.png" alt="Project" />
-                <img src="../static/MatchFound.png" alt="Project" style="display: none;" />
+            <section id="Projects">
+                <div class="project-item">
+                    <h3>Munch Match</h3>
+                        • Built a full-stack group decision-making web app using React, Next.js, tRPC, Node.js, and SQLite to help users vote on nearby restaurants or activities.
+                    <br>• Integrated Google Maps API to fetch personalized location-based options and implemented real-time group voting logic with session codes.
+                    <br>• Designed a clean, responsive UI using Tailwind CSS and managed data with Prisma for lightweight, efficient storage.
+                <div class="image2">
+                    <img src="../static/MMLanding_page.png" alt="Project" />
+                    <img src="../static/MatchFound.png" alt="Project" style="display: none;" />
+
+                </div>
+                <button class="next-btn">Next</button>
+            </div>
+            </section>
 
             </div>
-            <button class="next-btn">Next</button>
 
-            </div>
-            <div class="project-item">
-                <h3>Emotion Quest</h3>
-                    • Designed an interactive educational web app to help children with ASD and alexithymia learn to recognize and practice facial expressions using real-time feedback.
-                <br>• Implemented DeepFace to analyze user-submitted facial expressions and compare them to target emotions like happy, sad, angry, and surprised.
-                <br>• Built a kid-friendly interface with HTML, CSS, and JavaScript, and developed backend logic in Python (Flask) to handle image processing and AI integration.
-            </div>
-            <div class="image2">
-                <img src="../static/EQlandingPage.jpg" alt="Project" />
-                <img src="../static/practiceEmotion.jpg" alt="Project" style="display: none;"/>
-                <img src="../static/Learn.jpg" alt="Project" style="display: none;"/>
-            </div>
-            <button class="next-btn">Next</button>
-            </div>
+            <section id="Projects">
+                <div class="project-item">
+                    <h3>Emotion Quest</h3>
+                        • Designed an interactive educational web app to help children with ASD and alexithymia learn to recognize and practice facial expressions using real-time feedback.
+                    <br>• Implemented DeepFace to analyze user-submitted facial expressions and compare them to target emotions like happy, sad, angry, and surprised.
+                    <br>• Built a kid-friendly interface with HTML, CSS, and JavaScript, and developed backend logic in Python (Flask) to handle image processing and AI integration.
+                </div>
+                <div class="image2">
+                    <img src="../static/EQlandingPage.jpg" alt="Project" />
+                    <img src="../static/practiceEmotion.jpg" alt="Project" style="display: none;"/>
+                    <img src="../static/Learn.jpg" alt="Project" style="display: none;"/>
+                </div>
+                <button class="next-btn">Next</button>
+                
+                </div>
+            </section>
 
             
-
+            <section id="Projects">
             <div class="project-item">
                 <h3>Legacy Recipes:</h3>
                     • Developed an end-to-end web application using Python (Django) and HTML to connect individuals through food.
@@ -59,9 +65,7 @@
             </div>
             <span class="image2">
                 <img src="../static/HomePageProject.png" alt="Project" />
-            </span>
-            
-            
+            </span>            
         </section>	
     </main>
 

@@ -134,27 +134,17 @@ body {
 }
 
 .next-btn {
-  background-color: #04AA6D;
-  color: white;
-  position: center;
-  height: 20px;
-}
-
-.next-btn:hover {
-  background-color: #155e19;
-}
-
-#next-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #04AA6D;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    font-size: 24px;
+    padding: 6px 12px;
+    border: none;
+    background: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .next-btn:hover {
+    background: #ddd;
+  }
 
 .round {
   border-radius: 50%;
@@ -367,7 +357,7 @@ body {
 
 
 #Projects {
-    background-color: hsl(207, 31%, 94%); /* Background color for the Skills section */
+    background-color: hsl(211, 59%, 85%); /* Background color for the Skills section */
     padding: 20px; /* Add some padding to the Skills section */
     border: 5px solid white; /* Adds a white border */
 }
