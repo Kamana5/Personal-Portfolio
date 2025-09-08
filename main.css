@@ -134,7 +134,18 @@ body {
   color: black;
 }
 
-
+.next-btn {
+    font-size: 24px;
+    padding: 6px 12px;
+    border: none;
+    background: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .next-btn:hover {
+    background: #ddd;
+  }
 
 .round {
   border-radius: 50%;
@@ -345,6 +356,20 @@ body {
 }
 
 
+
+
+
+
+#Projects {
+    background-color: hsl(211, 59%, 85%); /* Background color for the Skills section */
+    padding: 20px; /* Add some padding to the Skills section */
+    border: 5px solid white; /* Adds a white border */
+}
+#Projects .project-item {
+    margin: 20px;
+    margin-left: 50px;
+
+}
 
 #contact {
 	background-color: hsl(211, 77%, 81%); 

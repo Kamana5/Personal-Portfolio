@@ -6,168 +6,67 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-  <style>
-    body {
-      background-image: url("../static/backround1.jpeg");
-      background-repeat: repeat-x;
-      background-position: top center;
-      background-size: cover;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #222;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: #2c3e50;
-      border-bottom: 2px solid #ddd;
-      display: inline-block;
-      padding-bottom: 0.5rem;
-    }
-
-    .project-item {
-    margin-bottom: 1rem;
-    background: #ffffffee;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;   /* stack content vertically */
-    justify-content: space-between; /* spread text/images and button */
-    min-height: 350px;  /* ensures card isn’t too small */
-    max-height: 850px;  /* keeps it shorter overall */
-    overflow: hidden;   /* hides any overflow past max height */
-    }
-    .project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
-
-    .project-item h3 {
-    margin-top: 0;
-    color: #34495e;
-    font-size: 1.5rem;
-    }
-
-    .project-item p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color: #555;
-    flex-grow: 1; /* let text fill available space */
-    }
-
-    .project-item .image2 {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    }
-
-    .project-item .image2 img {
-    max-height: 500px;   /* keep images shorter */
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .project-item .next-btn {
-    margin-top: auto;  /* ensures button sits at bottom */
-    align-self: center;
-    padding: 0.4rem 0.6rem;
-    font-size: 1rem;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    }
-
-    .project-item {
-    position: relative;
-    overflow: hidden;
-    }
-
-    .card-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    }
-
-    .project-item .next-btn {
-    position: relative;
-    z-index: 2;  
-    }
-
-
-  </style>
 </head>
+<style>
+  body {
+    background-image: url("../static/backround1.jpeg");
+    background-position: top center;
+    background-size: contain;
+
+}
+</style>
 <body>
-  <div id="header-container"></div>
+	<div id="header-container"></div>
+        <main>
+            
+            <h2>Projects:</h2>
+            <section id="Projects">
+                <div class="project-item">
+                    <h3>Munch Match</h3>
+                        • Built a full-stack group decision-making web app using React, Next.js, tRPC, Node.js, and SQLite to help users vote on nearby restaurants or activities.
+                    <br>• Integrated Google Maps API to fetch personalized location-based options and implemented real-time group voting logic with session codes.
+                    <br>• Designed a clean, responsive UI using Tailwind CSS and managed data with Prisma for lightweight, efficient storage.
+                <div class="image2">
+                    <img src="../static/MMLanding_page.png" alt="Project" />
+                    <img src="../static/MatchFound.png" alt="Project" style="display: none;" />
 
-  <main>
-    <h2>Projects</h2>
-        <div class="project-item">
-        <a href="https://github.com/Kamana5/MunchMatch" target="_blank" class="card-link"></a>
-        
-        <h3>Munch Match</h3>
-        <p>
-            • Built a full-stack group decision-making web app using React, Next.js, tRPC, Node.js, and SQLite.<br>
-            • Integrated Google Maps API to fetch location-based options and implemented real-time group voting logic.<br>
-            • Designed a clean UI with Tailwind CSS and managed data with Prisma for lightweight storage.
-        </p>
-        <div class="image2">
-            <img src="../static/MMLanding_page.png" alt="Munch Match Landing Page" />
-            <img src="../static/MatchFound.png" alt="Match Found Page" style="display:none;" />
-        </div>
-        <button class="next-btn">Next</button>
-        </div>
+                </div>
+                <button class="next-btn">Next</button>
+            </div>
+            </section>
 
-   
+            </div>
 
-   <div class="project-item">
-  <a href="https://github.com/Kamana5/EmotionQuest" target="_blank" class="card-link"></a>
+            <section id="Projects">
+                <div class="project-item">
+                    <h3>Emotion Quest</h3>
+                        • Designed an interactive educational web app to help children with ASD and alexithymia learn to recognize and practice facial expressions using real-time feedback.
+                    <br>• Implemented DeepFace to analyze user-submitted facial expressions and compare them to target emotions like happy, sad, angry, and surprised.
+                    <br>• Built a kid-friendly interface with HTML, CSS, and JavaScript, and developed backend logic in Python (Flask) to handle image processing and AI integration.
+                </div>
+                <div class="image2">
+                    <img src="../static/EQlandingPage.jpg" alt="Project" />
+                    <img src="../static/practiceEmotion.jpg" alt="Project" style="display: none;"/>
+                    <img src="../static/Learn.jpg" alt="Project" style="display: none;"/>
+                </div>
+                <button class="next-btn">Next</button>
+                
+                </div>
+            </section>
 
-  <h3>Emotion Quest</h3>
-  <p>
-    • Designed an interactive educational web app to help children with ASD and alexithymia learn to recognize and practice facial expressions using real-time feedback.<br>
-    • Implemented DeepFace to analyze user-submitted facial expressions and compare them to target emotions like happy, sad, angry, and surprised.<br>
-    • Built a kid-friendly interface with HTML, CSS, and JavaScript, and developed backend logic in Python (Flask) to handle image processing and AI integration.
-  </p>
-  <div class="image2">
-    <img src="../static/EQlandingPage.jpg" alt="Emotion Quest Landing Page" />
-    <img src="../static/practiceEmotion.jpg" alt="Practice Emotion Page" style="display:none;" />
-    <img src="../static/Learn.jpg" alt="Learn Page" style="display:none;" />
-  </div>
-  <button class="next-btn">Next</button>
-</div>
-
-<div class="project-item">
-  <a href="https://github.com/Kamana5/Recipe-Project" target="_blank" class="card-link"></a>
-
-  <h3>Legacy Recipes</h3>
-  <p>
-    • Developed an end-to-end web application using Python (Django) and HTML to connect individuals through food.<br>
-    • Designed and built a recipe-sharing platform where users can showcase cherished family recipes and explore a curated collection from others.<br>
-    • Implemented multi-user registration, login systems, and an admin interface for streamlined management.
-  </p>
-  <div class="image2">
-    <img src="../static/HomePageProject.png" alt="Legacy Recipes Home Page" />
-  </div>
-</div>
-
-  </main>
+            
+            <section id="Projects">
+            <div class="project-item">
+                <h3>Legacy Recipes:</h3>
+                    • Developed an end-to-end web application using Python (Django) and HTML to connect individuals through food.
+                <br>• Designed and built a recipe-sharing platform where users can showcase cherished family recipes and explore a curated collection from others.
+                <br>• Implemented multi-user registration, login systems, and an admin interface for streamlined management.
+            </div>
+            <span class="image2">
+                <img src="../static/HomePageProject.png" alt="Project" />
+            </span>            
+        </section>	
+    </main>
 
   <div id="footer-container"></div>
   <script src="pages.js"></script>

@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Carousel functionality for the image carousels
 document.querySelectorAll('.next-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const carousel = button.previousElementSibling;
-        const images = carousel.querySelectorAll('img');
-        let current = Array.from(images).findIndex(img => img.style.display !== 'none');
-        
-        images [current].style.display = 'none';
-        let next = (current + 1) % images.length;
-        images[next].style.display = 'block';
-    });
+  button.addEventListener('click', () => {
+      const carousel = button.previousElementSibling;
+      const images = carousel.querySelectorAll('img');
+      let current = Array.from(images).findIndex(img => img.style.display !== 'none');
+      
+      images [current].style.display = 'none';
+      let next = (current + 1) % images.length;
+      images[next].style.display = 'block';
+  });
 });

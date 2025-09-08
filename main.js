@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 // Fetching the different pages for the portfolio section
 document.addEventListener("DOMContentLoaded", () => {
   fetch("components/header.html")
