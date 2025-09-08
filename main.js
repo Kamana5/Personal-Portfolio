@@ -1,6 +1,6 @@
 // typing effect for the words "Developer.", "Engineer.", "Programmer."
 document.addEventListener("DOMContentLoaded", function() {
-    const words = ["Developer.", "Engineer.", "Programmer."];
+    const words = ["Developer.", "Engineer.", "Product Manager." , "Programmer."];
     let currentWordIndex = 0;
     let currentLetterIndex = 0;
     let isDeleting = false;
@@ -34,18 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     type();
 });
 
-// Carousel functionality for the image carousels
-document.querySelectorAll('.next-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const carousel = button.previousElementSibling;
-        const images = carousel.querySelectorAll('img');
-        let current = Array.from(images).findIndex(img => img.style.display !== 'none');
-        
-        images [current].style.display = 'none';
-        let next = (current + 1) % images.length;
-        images[next].style.display = 'block';
-    });
-});
+
 
 // Fetching the different pages for the portfolio section
 document.addEventListener("DOMContentLoaded", () => {

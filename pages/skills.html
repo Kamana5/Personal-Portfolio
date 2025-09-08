@@ -1,138 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Experience — Kamana Chapagain</title>
   <link rel="stylesheet" href="../main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+  <style>
+    body {
+      background-image: url("../static/backround1.jpeg");
+      background-repeat: repeat-x;
+      background-position: top center;
+      background-size: contain;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .skills-group {
+      margin: 2rem 0;
+    }
+
+    .skills-group h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #34495e;
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .skill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .skill img {
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: contain;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 14px rgba(0,0,0,0.15);
+    }
+
+  </style>
 </head>
-<style>
-  body {
-    background-image: url("../static/backround1.jpeg");
-    background-repeat: repeat-x;
-    background-position: top center;
-    background-size: contain;
-    background-attachment: scroll;
-    background-size: auto;
-}
-</style>
 <body>
-	<div id="header-container"></div>
-	<main>
-       <section id="Skills" class="skills">
-  <h2>Skills</h2>
+  <div id="header-container"></div>
+  <main>
+    <section id="Skills" class="skills">
+      <h2>Skills</h2>
 
-  <!-- Programming Languages & Frameworks -->
-  <div class="skills-group">
-    <h3>Programming Languages & Frameworks</h3>
-    <ul class="skills-grid" role="list">
-      <li class="skill" aria-label="Python">
-        <img src="../static/python.png" alt="Python"/>
-      </li>
-      <!-- Flask -->
-      <li class="skill" aria-label="Flask">
-        <i class="devicon-flask-original"></i>
-        <span>Flask</span>
-      </li>
-      <!-- Django -->
-      <li class="skill" aria-label="Django">
-        <i class="devicon-django-plain"></i>
-        <span>Django</span>
-      </li>
-      <!-- Java -->
-      <li class="skill" aria-label="Java">
-        <i class="devicon-java-plain"></i>
-        <span>Java</span>
-      </li>
-      <!-- JavaScript -->
-      <li class="skill" aria-label="JavaScript">
-        <i class="devicon-javascript-plain"></i>
-        <span>JavaScript</span>
-      </li>
-      <!-- TypeScript -->
-      <li class="skill" aria-label="TypeScript">
-        <i class="devicon-typescript-plain"></i>
-        <span>TypeScript</span>
-      </li>
-      <!-- C -->
-      <li class="skill" aria-label="C">
-        <i class="devicon-c-plain"></i>
-        <span>C</span>
-      </li>
-      <!-- HTML -->
-      <li class="skill" aria-label="HTML5">
-        <i class="devicon-html5-plain"></i>
-        <span>HTML</span>
-      </li>
-      <!-- CSS -->
-      <li class="skill" aria-label="CSS3">
-        <i class="devicon-css3-plain"></i>
-        <span>CSS</span>
-      </li>
-      <!-- Bash -->
-      <li class="skill" aria-label="Bash">
-        <i class="devicon-bash-plain"></i>
-        <span>Bash</span>
-      </li>
-      <!-- PHP -->
-      <li class="skill" aria-label="PHP">
-        <i class="devicon-php-plain"></i>
-        <span>PHP</span>
-      </li>
-      <!-- SQL (use database icon) -->
-      <li class="skill" aria-label="SQL">
-        <i class="devicon-mysql-plain"></i>
-        <span>SQL</span>
-      </li>
-    </ul>
-  </div>
+      <div class="skills-group">
+        <h3>Programming Languages & Frameworks</h3>
+        <ul class="skills-grid" role="list">
+          <li class="skill" aria-label="Python"><img src="../static/python.png" alt="Python"/></li>
+          <li class="skill" aria-label="Flask"><img src="../static/flask.png" alt="Flask"/></li>
+          <li class="skill" aria-label="Java"><img src="../static/java.png" alt="Java"/></li>
+          <li class="skill" aria-label="JavaScript"><img src="../static/js.png" alt="JavaScript"/></li>
+          <li class="skill" aria-label="TypeScript"><img src="../static/ts.png" alt="TypeScript"/></li>
+          <li class="skill" aria-label="HTML5"><img src="../static/html.png" alt="HTML"/></li>
+          <li class="skill" aria-label="CSS3"><img src="../static/css.png" alt="CSS"/></li>
+          <li class="skill" aria-label="PHP"><img src="../static/php.png" alt="PHP"/></li>
+          <li class="skill" aria-label="SQL"><img src="../static/sql.png" alt="SQL"/></li>
+        </ul>
+      </div>
 
-  <!-- Tools -->
-  <div class="skills-group">
-    <h3>Tools & Platforms</h3>
-    <ul class="skills-grid" role="list">
-      <!-- Git -->
-      <li class="skill" aria-label="Git">
-        <i class="devicon-git-plain"></i>
-        <span>Git</span>
-      </li>
-      <!-- GitHub -->
-      <li class="skill" aria-label="GitHub">
-        <i class="devicon-github-original"></i>
-        <span>GitHub</span>
-      </li>
-      <!-- Linux -->
-      <li class="skill" aria-label="Linux">
-        <i class="devicon-linux-plain"></i>
-        <span>Linux</span>
-      </li>
-      <!-- Figma -->
-      <li class="skill" aria-label="Figma">
-        <i class="devicon-figma-plain"></i>
-        <span>Figma</span>
-      </li>
-      <!-- VS Code -->
-      <li class="skill" aria-label="Visual Studio Code">
-        <i class="devicon-vscode-plain"></i>
-        <span>VS Code</span>
-      </li>
-      <!-- MongoDB -->
-      <li class="skill" aria-label="MongoDB">
-        <i class="devicon-mongodb-plain"></i>
-        <span>MongoDB</span>
-      </li>
-    </ul>
-  </div>
+      <div class="skills-group">
+        <h3>Tools & Platforms</h3>
+        <ul class="skills-grid" role="list">
+          <li class="skill" aria-label="Git"><img src="../static/git.png" alt="Git"/></li>
+          <li class="skill" aria-label="GitHub"><img src="../static/github.png" alt="GitHub"/></li>
+          <li class="skill" aria-label="Linux"><img src="../static/linux.png" alt="Linux"/></li>
+          <li class="skill" aria-label="Figma"><img src="../static/figma.png" alt="Figma"/></li>
+          <li class="skill" aria-label="VS Code"><img src="../static/vs.png" alt="VS Code"/></li>
+          <li class="skill" aria-label="MongoDB"><img src="../static/mongodb.png" alt="MongoDB"/></li>
+          <li class="skill" aria-label="Jira"><img src="../static/jira.png" alt="Jira"/></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-</section>
-
-	</main>
-
-<div id="footer-container"></div>
-<script src="pages.js"></script>
-
+  <div id="footer-container"></div>
+  <script src="pages.js"></script>
 </body>
-
-
 </html>

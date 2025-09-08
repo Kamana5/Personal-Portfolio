@@ -15,7 +15,7 @@ article, aside, details, footer, header, menu, section {
     display: block;
 }
 header {
-    background-color: rgb(222, 238, 252) ;
+    background-color: rgba(206, 229, 236, 0.384) ;
     padding: 1px;    
     border-radius: 8px;
     border: 5px solid white; /* Adds a white border */

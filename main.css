@@ -24,6 +24,7 @@ header {
     box-sizing: border-box;
     top: 0;
     margin-left: 25px;
+    z-index: 1000;
 
 }
 
@@ -133,28 +134,7 @@ body {
   color: black;
 }
 
-.next-btn {
-  background-color: #04AA6D;
-  color: white;
-  position: center;
-  height: 20px;
-}
 
-.next-btn:hover {
-  background-color: #155e19;
-}
-
-#next-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #04AA6D;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 .round {
   border-radius: 50%;
@@ -175,7 +155,7 @@ body {
 }
 
 #info {
-    background-color: hsl(204, 100%, 88%);
+    background-color: hsla(187, 85%, 61%, 0.253);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -250,15 +230,21 @@ body {
     margin-left: 50px;
 
 }
+#Experience.timeline {
+  position: relative;
+  padding-left: 40px; 
+}
+
 #Experience.timeline::before {
   content: "";
   position: absolute;
-  left: 78px;          
-  top: 330px;
-  bottom: -350px;
+  left: 78px; 
+  top: 200px;   
+  bottom: 200px;
   width: 2px;
   background: rgba(0, 0, 0, 0.12);
 }
+
 
 .tl-item {
   position: relative;
@@ -311,7 +297,6 @@ body {
 .tl-points li + li { margin-top: .35rem; }
 
 
-/* ---------- Skills Layout ---------- */
 .skills {
   margin: 2rem auto;
   padding: 1.25rem 1rem;
@@ -328,7 +313,6 @@ body {
   margin-top: 1.25rem;
 }
 
-/* Responsive grid of “pills” */
 .skills-grid {
   --gap: 0.75rem;
   --item-pad: 0.75rem;
@@ -339,47 +323,32 @@ body {
 
 }
 
-/* Individual skill */
 .skill {
   display: flex;
-  flex-direction: column;   /* stack logo + text vertically */
-  align-items: center;      /* center horizontally */
-  justify-content: center;  /* center vertically */
+  flex-direction: column;   
+  align-items: center;     
+  justify-content: center;  
   padding: 1rem;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 200ms ease, box-shadow 200ms ease;
   text-align: center;
-  height: 80px;   /* fixed height so image+text can center properly */
+  height: 80px;  
 }
 
 .skill img {
   width: 100px;
   height: 100px;
-  object-fit: contain; /* ensures no distortion */
+  object-fit: contain; 
   margin-bottom: 0.5rem;
 }
 
 
 
-
-
-
-#Projects {
-    background-color: hsl(207, 31%, 94%); /* Background color for the Skills section */
-    padding: 20px; /* Add some padding to the Skills section */
-    border: 5px solid white; /* Adds a white border */
-}
-#Projects .project-item {
-    margin: 20px;
-    margin-left: 50px;
-
-}
-
 #contact {
-	background-color: hsl(211, 77%, 81%); /* Background color for the Skills section */
-    padding: 20px; /* Add some padding to the Skills section */
+	background-color: hsl(211, 77%, 81%); 
+    padding: 20px; 
     background: #fff;
     padding: 20px;
     max-width: 600px;
@@ -469,8 +438,8 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-grow: 1; /* Allow the menu to take available space */
-    justify-content: space-evenly; /* Distribute items evenly */
+    flex-grow: 1; 
+    justify-content: space-evenly; 
 }
 
 ul li {
@@ -553,7 +522,17 @@ p {
 }
 
 footer {
-    font-size: 0.8rem; /* Adjust the font size as needed */
-	text-align: center;
+    font-size: 0.8rem; 
 }
 
+.project-item .next-btn {
+  margin-top: auto;  /* ensures button sits at bottom */
+  align-self: center;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
