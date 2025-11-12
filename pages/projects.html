@@ -1,167 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Experience — Kamana Chapagain</title>
-  <link rel="stylesheet" href="../main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <head>
+    <title>Experience — Kamana Chapagain</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
 
-  <style>
-    body {
-      background-image: url("../static/backround1.jpeg");
-      background-repeat: repeat-x;
-      background-position: top center;
-      background-size: cover;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #222;
-    }
+    <style>
+      body {
+        background-image: url("../static/backround1.jpeg");
+        background-repeat: repeat-x;
+        background-position: top center;
+        background-size: cover;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #222;
+      }
 
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: #2c3e50;
-      border-bottom: 2px solid #ddd;
-      display: inline-block;
-      padding-bottom: 0.5rem;
-    }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: #2c3e50;
+        border-bottom: 2px solid #ddd;
+        display: inline-block;
+        padding-bottom: 0.5rem;
+      }
 
-    .project-item {
-      position: relative;
-      margin-bottom: 3rem;
-      background: #ffffffee;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      max-height: 800px;
-        overflow: hidden;
-    }
+      .project-item {
+        position: relative;
+        margin-bottom: 3rem;
+        background: #ffffffee;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1rem 1.2rem 0.8rem 1.2rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
 
-    .project-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
+      .project-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
 
-    .project-item h3 {
-      margin-top: 0;
-      color: #34495e;
-      font-size: 1.5rem;
-    }
+      .project-item h3 {
+        margin-top: 0;
+        color: #34495e;
+        font-size: 1.5rem;
+      }
 
-    .project-item p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #555;
-    }
+      .project-item p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+      }
 
-    .image-section, .image2 {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
+      .image-section,
+      .image2 {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        position: relative;    
+      }
 
-    .image2 img {
-      max-width: 100%;
-      max-height: 500px;
-      border-radius: 10px;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+      .image2 img {
+        max-width: 100%;
+        max-height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0;
+      }
 
-    .next-btn {
-      padding: 0.6rem 1.2rem;
-      font-size: 1rem;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      display: block;
-      align-self: center;
-    }
+      .next-btn {
+        font-size: 1.3rem;
+        background: #63a8f1;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        display: block;
+        align-self: center;
+        margin: 1.5rem auto 0 58rem;
+        z-index: 3; 
+        
+      }
 
-    .next-btn:hover {
-      background: #0056b3;
-    }
+      .next-btn:hover {
+        background: #0470e4;
+      }
 
-    .card-link {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1; 
-    }
+      .card-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
 
-    .project-item .next-btn {
-      position: relative;
-      z-index: 2;
-    }
-  </style>
-</head>
-<body>
-  <div id="header-container"></div>
+      .project-item .next-btn {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header-container"></div>
 
-  <main>
-    <h2>Projects</h2>
+    <main>
+      <h2>Projects</h2>
 
-    <div class="project-item">
-      <a href="https://github.com/Kamana5/MunchMatch" target="_blank" class="card-link"></a>
+      <div class="project-item">
+        <a
+          href="https://github.com/Kamana5/MunchMatch"
+          target="_blank"
+          class="card-link"
+        ></a>
         <div class="card-content">
-      <h3>Munch Match</h3>
-      <p>
-        • Built a full-stack group decision-making web app using React, Next.js, tRPC, Node.js, and SQLite.<br>
-        • Integrated Google Maps API for personalized location-based options and implemented real-time group voting.<br>
-        • Designed a clean, responsive UI with Tailwind CSS and managed data with Prisma.
-      </p>
-        <div class="image2">
-          <img src="../static/MMLanding_page.png" alt="Munch Match Landing Page" />
-          <img src="../static/MatchFound.png" alt="Match Found Page" style="display:none;" />
+          <h3>Munch Match</h3>
+          <p>
+            • Built a full-stack group decision-making web app using React,
+            Next.js, tRPC, Node.js, and SQLite.<br />
+            • Integrated Google Maps API for personalized location-based options
+            and implemented real-time group voting.<br />
+            • Designed a clean, responsive UI with Tailwind CSS and managed data
+            with Prisma.
+          </p>
+          <div class="image2">
+            <img
+              src="../static/MMLanding_page.png"
+              alt="Munch Match Landing Page"
+            />
+            <img
+              src="../static/MatchFound.png"
+              alt="Match Found Page"
+              style="display: none"
+            />
+          </div>
+          <button class="next-btn">➨</button>
         </div>
-        <button class="next-btn">Next</button>
-    </div>
-</div>
-    <div class="project-item">
-      <a href="https://github.com/Kamana5/EmotionQuest" target="_blank" class="card-link"></a>
-      <h3>Emotion Quest</h3>
-      <p>
-        • Designed an educational web app to help children with ASD learn facial expressions with real-time feedback.<br>
-        • Implemented DeepFace to analyze user-submitted facial expressions.<br>
-        • Built a kid-friendly interface with HTML, CSS, JS, and Flask backend.
-      </p>
+      </div>
+      <div class="project-item">
+        <a
+          href="https://github.com/Kamana5/EmotionQuest"
+          target="_blank"
+          class="card-link"
+        ></a>
+        <h3>Emotion Quest</h3>
+        <p>
+          • Designed an educational web app to help children with ASD learn
+          facial expressions with real-time feedback.<br />
+          • Implemented DeepFace to analyze user-submitted facial
+          expressions.<br />
+          • Built a kid-friendly interface with HTML, CSS, JS, and Flask
+          backend.
+        </p>
         <div class="image2">
-          <img src="../static/EQlandingPage.jpg" alt="Emotion Quest Landing Page" />
-          <img src="../static/practiceEmotion.jpg" alt="Practice Emotion Page" style="display:none;" />
-          <img src="../static/Learn.jpg" alt="Learn Page" style="display:none;" />
+          <img
+            src="../static/EQlandingPage.jpg"
+            alt="Emotion Quest Landing Page"
+          />
+          <img
+            src="../static/practiceEmotion.jpg"
+            alt="Practice Emotion Page"
+            style="display: none"
+          />
+          <img
+            src="../static/Learn.jpg"
+            alt="Learn Page"
+            style="display: none"
+          />
         </div>
-        <button class="next-btn">Next</button>
-    </div>
+        <button class="next-btn">➨</button>
+      </div>
 
-    <div class="project-item">
-      <a href="https://github.com/Kamana5/Recipe-Project" target="_blank" class="card-link"></a>
-      <h3>Legacy Recipes</h3>
-      <p>
-        • Developed an end-to-end web application using Python (Django) and HTML to connect individuals through food.<br>
-        • Designed and built a recipe-sharing platform for family recipes.<br>
-        • Implemented registration, login, and admin interface.
-      </p>
+      <div class="project-item">
+        <a
+          href="https://github.com/Kamana5/Recipe-Project"
+          target="_blank"
+          class="card-link"
+        ></a>
+        <h3>Legacy Recipes</h3>
+        <p>
+          • Developed an end-to-end web application using Python (Django) and
+          HTML to connect individuals through food.<br />
+          • Designed and built a recipe-sharing platform for family recipes.<br />
+          • Implemented registration, login, and admin interface.
+        </p>
         <div class="image2">
-          <img src="../static/HomePageProject.png" alt="Legacy Recipes Home Page" />
+          <img
+            src="../static/HomePageProject.png"
+            alt="Legacy Recipes Home Page"
+          />
         </div>
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <div id="footer-container"></div>
-  <script src="pages.js"></script>
-</body>
+    <div id="footer-container"></div>
+    <script src="pages.js"></script>
+  </body>
 </html>
