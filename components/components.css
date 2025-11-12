@@ -40,7 +40,7 @@ header {
 
 
 #menu li a {
-    color: #35afe8;
+    color: #2fcdf5;
     text-shadow: 
         1.5px 1.5px 0 #ffffff, 
         -1.5px -1.5px 0 #ffffff, 
@@ -53,10 +53,10 @@ header {
 #menu li a:hover {
     color: #ffffff;
     text-shadow: 
-        1.5px 1.5px 0 #35afe8, 
-        -1.5px -1.5px 0 #35afe8, 
-        1.5px -1.5px 0 #35afe8, 
-        -1.5px 1.5px 0 #35afe8;
+        1.5px 1.5px 0 #2fcdf5, 
+        -1.5px -1.5px 0 #2fcdf5, 
+        1.5px -1.5px 0 #2fcdf5, 
+        -1.5px 1.5px 0 #2fcdf5;
 }
 
 
