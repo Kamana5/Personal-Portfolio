@@ -24,6 +24,7 @@ header {
     box-sizing: border-box;
     top: 0;
     margin-left: 25px;
+    z-index: 1000;
 
 }
 
@@ -35,7 +36,7 @@ header {
     justify-content: space-evenly;
     margin-left: 100px;
     margin-right: 100px;
-
+    z-index: 9999; 
 }
 
 
@@ -59,7 +60,18 @@ header {
         -1.5px 1.5px 0 #2fcdf5;
 }
 
-
+#menu li a.active {
+    color: #ffffff;
+    text-shadow: 
+        1.5px 1.5px 0 #00ccff, 
+        -1.5px -1.5px 0 #00ccff, 
+        1.5px -1.5px 0 #00ccff, 
+        -1.5px 1.5px 0 #00ccff;
+    text-shadow:
+        0 0 5px #00ccff,
+        0 0 5px #00ccff,
+        0 0 5px #00ccff;
+}
 
 #Name{
 	text-align: center;

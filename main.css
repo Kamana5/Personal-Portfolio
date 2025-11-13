@@ -60,7 +60,14 @@ header {
         -1.5px 1.5px 0 #35afe8;
 }
 
-
+#menu li a.active {
+    color: #ffffff;
+    text-shadow: 
+        1.5px 1.5px 0 #2fcdf5, 
+        -1.5px -1.5px 0 #2fcdf5, 
+        1.5px -1.5px 0 #2fcdf5, 
+        -1.5px 1.5px 0 #2fcdf5;
+}
 
 #Name{
 	text-align: center;
@@ -152,8 +159,6 @@ body {
 }
 
 #Introduction {
-
-    background-image: url(backround.jpeg); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;

@@ -33,16 +33,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     type();
 });
-
-
-// Fetching the different pages for the portfolio section
 document.addEventListener("DOMContentLoaded", () => {
   fetch("components/header.html")
-    .then(res =>  res.text())
+    .then(res => res.text())
     .then(data => {
       document.getElementById("header-container").innerHTML = data;
-    })
 
+      let path = window.location.pathname;
+
+
+      document.querySelectorAll("#menu li a").forEach(link => {
+        const href = link.getAttribute("href");
+
+        if ((path === "/") && href === "/") {
+          link.classList.add("active");
+        }
+        else if (href !== "/" && path.startsWith(href)) {
+          link.classList.add("active");
+        }
+      });
+    });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -53,35 +63,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("pages/experience.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("experience-container").innerHTML = data;
-        })  
-});
-
-document.addEventListener("DOMContentLoaded",() => {
-    fetch("pages/skills.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("skills-container").innerHTML = data;
-        })
-    });
-
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("pages/projects.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("projects-container").innerHTML = data;
-        })
-
-})
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("pages/contacts.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("contacts-container").innerHTML = data;
-        })
-
-})

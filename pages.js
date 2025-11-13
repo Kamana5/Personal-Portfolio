@@ -3,7 +3,17 @@
 fetch("/pages/header.html")
   .then(response => response.text())
   .then(data => {
+    console.log("PATH =", window.location.pathname);
+
     document.getElementById("header-container").innerHTML = data;
+    const path = window.location.pathname;
+
+    document.querySelectorAll("#menu li a").forEach((link) => {
+      const href = link.getAttribute("href");
+      if (path.startsWith(href) && href !== "/") {
+        link.classList.add("active");
+      }
+    });
   });
 
 // Load footer
