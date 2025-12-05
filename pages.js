@@ -24,15 +24,44 @@ fetch("/pages/footer.html")
   });
 
 
-// Carousel functionality for the image carousels
-document.querySelectorAll('.next-btn').forEach(button => {
-  button.addEventListener('click', () => {
-      const carousel = button.previousElementSibling;
-      const images = carousel.querySelectorAll('img');
-      let current = Array.from(images).findIndex(img => img.style.display !== 'none');
-      
-      images [current].style.display = 'none';
-      let next = (current + 1) % images.length;
-      images[next].style.display = 'block';
+// Carousel functionality for next & prev buttons
+document.querySelectorAll('.project-item').forEach(project => {
+  const images = project.querySelectorAll('.image2 img');
+  const nextBtn = project.querySelector('.next-btn');
+  const prevBtn = project.querySelector('.prev-btn');
+  const label = project.querySelector('.design-label');
+
+  let current = 0;
+
+  function updateLabel() {
+    if (!label) return; // skip all other projects
+    label.textContent = current % 2 === 0 ? "New Design:" : "Previous Design:";
+  }
+
+  updateLabel();
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  // Next image
+  nextBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    current = (current + 1) % images.length;
+    showImage(current);
+    updateLabel();
   });
+
+  // Prev image
+  prevBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    current = (current - 1 + images.length) % images.length;
+    showImage(current);
+    updateLabel();
+  });
+
+  // Initialize
+  showImage(current);
 });

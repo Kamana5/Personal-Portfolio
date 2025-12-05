@@ -1,6 +1,6 @@
 // typing effect for the words "Developer.", "Engineer.", "Programmer."
 document.addEventListener("DOMContentLoaded", function() {
-    const words = ["Developer.", "Engineer.", "Product Manager." , "Programmer."];
+    const words = ["Developer.", "Engineer.", "Product Manager." , "Designer", "Programmer."];
     let currentWordIndex = 0;
     let currentLetterIndex = 0;
     let isDeleting = false;

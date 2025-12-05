@@ -87,16 +87,21 @@
         margin-bottom: 0;
       }
 
+      .button-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.7rem;
+      flex-direction: row-reverse
+      }
+
       .next-btn {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+        max-width: 50px;
         background: #5ccfdfe0;
         color: white;
         border: none;
         border-radius: 6px;
         cursor: pointer;
-        display: block;
-        align-self: center;
-        margin-left: auto;
         margin-top: 0.7rem;
         z-index: 3; 
         
@@ -105,6 +110,23 @@
       .next-btn:hover {
         background: #9eeef8;
       }
+
+       .prev-btn {
+        font-size: 1.7rem;
+        background: #5ccfdfe0;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 0.7rem;
+        z-index: 3; 
+        
+      }
+
+      .prev-btn:hover {
+        background: #9eeef8;
+      }
+
 
       .card-link {
         position: absolute;
@@ -115,10 +137,22 @@
         z-index: 1;
       }
 
-      .project-item .next-btn {
-        position: relative;
+      .prev-btn,
+
+      .next-btn {
+        position: relative; 
         z-index: 2;
+        pointer-events: auto;
       }
+
+      .design-label {
+        text-align: center;
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-top: 0.4rem;
+        color: #2c3e50;
+      }
+
     </style>
   </head>
   <body>
@@ -126,6 +160,58 @@
 
     <main>
       <h2>Projects</h2>
+
+      <div class="project-item">
+        <a
+          href="https://dashboard.cac.queensu.ca/login"
+          target="_blank"
+          class="card-link"
+        ></a>
+        <div class="card-content">
+          <h3>LOLA</h3>
+          <p>
+            • Utilized Figma to view and edit UI/UX desgin for improved user
+            experience.<br />
+            • Implemented new designs with React (Chakra UI) to enhance visual appeal
+            and functionality.<br />
+
+          </p>
+
+          <div class="design-label">New Design</div>
+
+          <div class="image2">
+            <img
+              src="../static/LOLAnew1.png"
+              alt="LOLA Landing Page"
+            />
+            <img
+              src="../static/LOLAprev1.png"
+              style="display: none"
+            />
+            <img
+              src="../static/LOLAnew2.png"
+              style="display: none"
+            />
+            <img
+              src="../static/LOLAprev2.png"
+              style="display: none"
+            />
+            <img
+              src="../static/LOLAnew3.png"
+              style="display: none"
+            />
+            <img
+              src="../static/LOLAprev3.png"
+              style="display: none"
+            />
+          </div>
+
+          <div class="button-row">
+          <button class="next-btn">➡</button>
+          <button class="prev-btn">⬅</button>
+          </div>
+        </div>
+      </div>
 
       <div class="project-item">
         <a
@@ -154,7 +240,10 @@
               style="display: none"
             />
           </div>
-          <button class="next-btn">➨</button>
+          <div class="button-row">
+            <button class="next-btn">➡</button>
+            <button class="prev-btn">⬅</button>
+          </div>
         </div>
       </div>
       <div class="project-item">
@@ -188,7 +277,10 @@
             style="display: none"
           />
         </div>
-        <button class="next-btn">➨</button>
+          <div class="button-row">
+            <button class="next-btn">➡</button>
+            <button class="prev-btn">⬅</button>
+          </div>
       </div>
 
       <div class="project-item">
